@@ -35,9 +35,7 @@ module.exports = function(source) {
   const options = Object.assign({
     json: false,
 
-    // Default to the paths given to the compiler (this.options is the
-    // webpack options object)
-    paths: this.options.resolve.modules || [],
+    paths: [],
 
     pbjsArgs: [],
   }, getOptions(this));
